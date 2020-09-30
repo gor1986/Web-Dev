@@ -1,0 +1,26 @@
+.menu {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 400px;
+}
+
+ul {
+  @extend .menu;
+}
+
+ul li {
+  &:hover {
+    color: red;
+  }
+  transition: all 0.5s ease-in-out;
+  cursor: pointer;
+}
+
+.menu_item {
+  position: relative;
+}
+
+.menu_item ul {
+  position: absolute;
+}

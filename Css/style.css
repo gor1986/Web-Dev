@@ -1,0 +1,34 @@
+:root {
+  --color: red;
+  --bgcolor: blue;
+}
+
+.menu,
+ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  width: 400px;
+  color: var(--color);
+}
+
+ul li {
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+ul li:hover {
+  color: red;
+  background-color: var(--bgcolor);
+}
+
+.menu_item {
+  position: relative;
+}
+
+.menu_item ul {
+  position: absolute;
+}
+
+.add_date {
+  color: red;
+}
